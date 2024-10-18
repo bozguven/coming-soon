@@ -5,15 +5,28 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <style>
-        body { margin: 0; padding: 0; background-color: #FFF4E0; } /* Light beige background */
-        html { height: 100%; cursor: default; }
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background-color: #FFF4E0; /* Light beige background */
+            background-image: url('images/beerfor2_Twitch_Video_Player_Banner.png'); /* Your background image */
+            background-size: cover; /* Cover the whole page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            height: 100vh; /* Full height */
+            opacity: 0.8; /* Faded effect */
+            animation: fadein 3s forwards;
+            filter: brightness(80%); /* Additional fade effect */
+        }
+        html { 
+            height: 100%; 
+            cursor: default; 
+        }
         body {
             font-family: "Roboto", sans-serif; /* Default font */
             width: 100%; height: 100%;
             text-align: center;
             display: table;
-            opacity: 1;
-            animation: fadein 3s forwards;
         }
         h1 {
             color: #D4A017; /* Dark yellow */
