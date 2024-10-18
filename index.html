@@ -1,83 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - coooksekerli</title>
     <style>
         body { 
-            margin: 0; 
-            padding: 0; 
-            background-color: #FFF4E0; /* Light beige background */
-            background-image: url('images/beerfor2_Twitch_Video_Player_Banner.png'); /* Your background image */
-            background-size: cover; /* Cover the whole page */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
-            height: 100vh; /* Full height */
-            opacity: 0.8; /* Faded effect */
-            animation: fadein 3s forwards;
-            filter: brightness(80%); /* Additional fade effect */
+            margin: 0; padding: 0; background-color: #FFF4E0; 
+            font-family: "Roboto", sans-serif; 
+            width: 100%; height: 100%; text-align: center; display: table;
         }
-        html { 
-            height: 100%; 
-            cursor: default; 
-        }
+        html { height: 100%; cursor: default; }
         body {
-            font-family: "Roboto", sans-serif; /* Default font */
-            width: 100%; height: 100%;
-            text-align: center;
-            display: table;
+            animation: fadein 3s forwards;
         }
         h1 {
-            color: #D4A017; /* Dark yellow */
+            color: #D4A017;
             font-size: 2.5em;
         }
         h2 {
-            color: #A0522D; /* Coffee tone */
+            color: #A0522D;
             font-weight: 300;
             margin-bottom: 25px;
         }
-        img {
-            width: 20%; /* Image width */
-            border: 0;
-            aspect-ratio: 125 / 50;
-        }
         #main {
-            vertical-align: middle;
             display: table-cell;
+            vertical-align: middle;
         }
-        /* Progress bar */
+        img {
+            width: 200px; /* Adjusted size */
+            aspect-ratio: auto;
+            border-radius: 50%; /* Optional: gives the image a rounded look */
+        }
         #progress {
-            width: 45%; /* Bar width */
+            width: 45%; 
             margin: 0 auto;
-            border-radius: 10px; /* Roundness */
-            background-color: #D4A017; /* Dark yellow for progress background */
+            border-radius: 10px;
+            background-color: #D4A017;
             padding: 7px 5px;
         }
         #fill {
             padding: 2px 0;
-            background-color: #8B0000; /* Red fill color */
-            width: 35%; /* Bar percentage, change text below also */
-            border-radius: 25px; /* Roundness */
+            background-color: #8B0000;
+            width: 35%;
+            border-radius: 25px;
             animation: proanimate 2s;
         }
         #barpercent h3 {
             color: white;
-            margin: 0; padding: 0;
-            opacity: 1;
+            margin: 0;
+            padding: 0;
             animation: fadein 3s forwards;
         }
 
         /* Fades in animation */
         @keyframes fadein  {
             from { opacity: 0; }
+            to { opacity: 1; }
         }
-        /* Animates bar on page load */
         @keyframes proanimate {
             from { width: 0%; }
+            to { width: 35%; }
         }
-
-        @media screen and (max-width:600px) {
+        
+        /* Make layout responsive for smaller screens */
+        @media screen and (max-width: 600px) {
             img {
                 width: 60%;
             }
@@ -89,15 +76,19 @@
                 font-size: 1.1em;
             }
             #progress {
-                width: 80%; /* Bar width */
+                width: 80%; 
             }
         }
-        /* Button styling */
+
+        /* Button Styling with Icons */
         .social-button {
-            background-color: #D4A017; /* Button background color */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #D4A017;
             color: white;
             border: none;
-            padding: 15px 32px;
+            padding: 10px 20px;
             text-align: center;
             font-size: 16px;
             margin: 10px 5px;
@@ -105,22 +96,44 @@
             border-radius: 12px;
             text-decoration: none;
         }
+        .social-button img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
         .social-button:hover {
-            background-color: #8B0000; /* Red hover effect */
+            background-color: #8B0000;
         }
     </style>
-    <title>Coming Soon - coooksekerli</title>
 </head>
 <body>
     <div id="main">
-        <img src="logo.png" alt="Logo Image">
+        <!-- Logo Image Updated -->
+        <img src="/mnt/data/beerfor2_Use_only_3_sugar_cubes_87575284-5946-46d6-9126-a6ae7138f77a.jpg" alt="Cup Logo">
         <h1>coooksekerli</h1>
         <h2>Our website is currently under construction. Stay tuned!</h2>
-        <div id="progress"><div id="fill"><div id="barpercent"><h3>35%</h3></div></div></div>
+
+        <!-- Progress Bar -->
+        <div id="progress">
+            <div id="fill">
+                <div id="barpercent">
+                    <h3>35%</h3>
+                </div>
+            </div>
+        </div>
+
         <br>
-        <a href="https://twitch.tv/coooksekerli" class="social-button">Follow us on Twitch</a>
-        <a href="https://instagram.com/coooksekerli" class="social-button">Follow us on Instagram</a>
+
+        <!-- Updated Social Links with Icons -->
+        <a href="https://twitch.tv/coooksekerli" class="social-button">
+            <img src="twitch_logo.png" alt="Twitch"> Follow us on Twitch
+        </a>
+        <a href="https://instagram.com/coooksekerli" class="social-button">
+            <img src="instagram_logo.png" alt="Instagram"> Follow us on Instagram
+        </a>
     </div>
+    
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </body>
 </html>
