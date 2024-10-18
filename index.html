@@ -5,7 +5,7 @@
     <meta name=viewport content="width=device-width, initial-scale=1">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <style>
-        body { margin: 0; padding: 0; }
+        body { margin: 0; padding: 0; background-color: #FFF4E0; } /* Light beige background */
         html { height: 100%; cursor: default; }
         body {
             font-family: "Roboto", sans-serif; /* Default font */
@@ -15,15 +15,18 @@
             opacity: 1;
             animation: fadein 3s forwards;
         }
+        h1 {
+            color: #D4A017; /* Dark yellow */
+            font-size: 2.5em;
+        }
         h2 {
+            color: #A0522D; /* Coffee tone */
             font-weight: 300;
             margin-bottom: 25px;
         }
         img {
-            width: 25%; /* Image width */
-            border: 0; /* For IE */
-            /* Aspect ratio of image, gives initial dimension to prevent text moving down once image is loaded */
-            /* When changing logo, change this also */
+            width: 20%; /* Image width */
+            border: 0;
             aspect-ratio: 125 / 50;
         }
         #main {
@@ -35,19 +38,18 @@
             width: 45%; /* Bar width */
             margin: 0 auto;
             border-radius: 10px; /* Roundness */
-            background-color: #a8a8a8; /* Background colour */
+            background-color: #D4A017; /* Dark yellow for progress background */
             padding: 7px 5px;
-            /* border: 5px solid #a8a8a8; Border */
         }
         #fill {
             padding: 2px 0;
-            background-color: #00b98b; /* Fill colour */
+            background-color: #8B0000; /* Red fill color */
             width: 35%; /* Bar percentage, change text below also */
             border-radius: 25px; /* Roundness */
             animation: proanimate 2s;
         }
         #barpercent h3 {
-            color: white; /* Bar percentage text colour */
+            color: white;
             margin: 0; padding: 0;
             opacity: 1;
             animation: fadein 3s forwards;
@@ -77,15 +79,34 @@
                 width: 80%; /* Bar width */
             }
         }
+        /* Button styling */
+        .social-button {
+            background-color: #D4A017; /* Button background color */
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 12px;
+            text-decoration: none;
+        }
+        .social-button:hover {
+            background-color: #8B0000; /* Red hover effect */
+        }
     </style>
-    <title>Coming Soon</title>
+    <title>Coming Soon - coooksekerli</title>
 </head>
 <body>
     <div id="main">
         <img src="logo.png" alt="Logo Image">
-        <h1>Company Name</h1>
-        <h2>Our website is currently under construction. </h2>
+        <h1>coooksekerli</h1>
+        <h2>Our website is currently under construction. Stay tuned!</h2>
         <div id="progress"><div id="fill"><div id="barpercent"><h3>35%</h3></div></div></div>
+        <br>
+        <a href="https://twitch.tv/coooksekerli" class="social-button">Follow us on Twitch</a>
+        <a href="https://instagram.com/coooksekerli" class="social-button">Follow us on Instagram</a>
     </div>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </body>
